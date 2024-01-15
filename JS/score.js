@@ -5,6 +5,7 @@ class Score {
     this.best = Number(localStorage.getItem("best")) || 0;
     this.value = 0;
   }
+ 
   // рисуем счет при игре, и выводим счет игрока и лучший счет в игре
   draw() {
     ctx.fillStyle = "#ff0";

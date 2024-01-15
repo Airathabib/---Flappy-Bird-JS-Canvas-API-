@@ -11,6 +11,7 @@ class Bird {
     this.radius = 12;
     this.physics = new BirdPhysics();
   }
+  
   // отрисовываем птицу
   draw() {
     let bird = this.animation[this.physics.frame];

@@ -8,10 +8,21 @@ title.classList.add('title')
 title.innerHTML = 'Flappy Bird'
 canvas.width = 650;
 canvas.height = 480;
+
+if (window.innerWidth <= 600) {
+  // Применить стили для экранов шириной менее 600 пикселей
+  canvas.width = window.innerWidth * 0.8; // 80% ширины окна
+  canvas.height = window.innerHeight * 0.8; // 80% высоты окна
+
+}
+
 canvas.classList.add('canvas')
 
 container.insertAdjacentElement('beforebegin', title)
 container.insertAdjacentElement('afterbegin', canvas)
+
+
+
 
 // создаем переменную кадры игры
 let frame = 0;
